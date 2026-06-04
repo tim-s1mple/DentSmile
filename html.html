@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>DentaSmile Pro | Modern Dentistry UK</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><i class="fas fa-tooth"></i> DentaSmile Pro</div>
+            <div class="nav-links">
+                <a href="#">Services</a>
+                <a href="#">Dentists</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+                <a href="#" class="header-phone"><i class="fas fa-phone-alt"></i> +44 20 7946 0138</a>
+                <button class="btn-primary" id="openModalBtn">Book Now</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Dentistry where <span class="hero-highlight">pain is not an option</span> — professional & transparent</h1>
+                <p class="hero-desc">Diagnostics, implants, and aesthetics in just one visit. We'll bring back your smile habit — no hidden fees.</p>
+                <button class="btn-primary" id="heroBtn">Free consultation →</button>
+                <div class="trust-badge">
+                    <i class="fas fa-check-circle"></i> <span>GDC registered Clinic</span>
+                    <i class="fas fa-shield-alt"></i> <span>5-year guarantee</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://placehold.co/600x500/eef2f6/1AA7EC?text=Happy+Smile" alt="Happy patient smile">
+                <div class="floating-icon" style="top: 20px; left: -20px;"><i class="fas fa-microscope"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center;">Why choose us</h2>
+            <div class="cards-grid">
+                <div class="feature-card"><i class="fas fa-microscope"></i><h3>Microscope treatment</h3><p>98% precision, preserving healthy tissue.</p></div>
+                <div class="feature-card"><i class="fas fa-clock"></i><h3>On-time appointments</h3><p>No waiting, your time is valued.</p></div>
+                <div class="feature-card"><i class="fas fa-award"></i><h3>5-year warranty</h3><p>Official guarantee on all procedures.</p></div>
+                <div class="feature-card"><i class="fas fa-user-md"></i><h3>Expert team</h3><p>PhD specialists with 12+ years experience.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Accordion -->
+    <section class="services">
+        <div class="container">
+            <h2 style="text-align: center;">Treatments without fear</h2>
+            <div class="services-grid" id="servicesAccordion">
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-title"><i class="fas fa-teeth"></i> <span>Dental Implants</span></div>
+                        <span class="service-price">from £1,850</span>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </div>
+                    <div class="service-desc">Nobel Biocare implants, all-inclusive. 0% finance available for 6 months.</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-title"><i class="fas fa-smile"></i> <span>Veneers & Aesthetics</span></div>
+                        <span class="service-price">from £950</span>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </div>
+                    <div class="service-desc">Porcelain veneers in 3 visits — Hollywood smile makeover.</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-title"><i class="fas fa-water"></i> <span>AirFlow / Hygiene</span></div>
+                        <span class="service-price">£95</span>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </div>
+                    <div class="service-desc">Complete stain removal & polish. Special offer: +free check-up.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dentists Slider -->
+    <section class="doctors">
+        <div class="container">
+            <h2 style="text-align: center;">Our dentists</h2>
+            <div class="swiper doctors-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide doctor-card"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Doctor"><h4>Dr. Anna Peterson</h4><p>Orthodontist, 14 yrs</p><i class="fas fa-star" style="color:#FFA26B;"></i> 4.9</div>
+                    <div class="swiper-slide doctor-card"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Doctor"><h4>Dr. Dmitri Volkov</h4><p>Implant Surgeon</p><i class="fas fa-star"></i> 5.0</div>
+                    <div class="swiper-slide doctor-card"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Doctor"><h4>Dr. Elena Moroz</h4><p>Restorative Dentist</p><i class="fas fa-star"></i> 4.8</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Slider -->
+    <section class="case-studies">
+        <div class="container">
+            <h2 style="text-align: center;">Real cases</h2>
+            <div class="swiper swiper-ba">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ba-slide"><img src="https://placehold.co/800x400/e2e8f0/1AA7EC?text=Before+and+After+slide" alt="Case"><div class="ba-caption">Caries treatment + veneers</div></div>
+                    <div class="swiper-slide ba-slide"><img src="https://placehold.co/800x400/cbd5e1/FFA26B?text=Dental+Implant+case" alt="Case"><div class="ba-caption">Full jaw implant restoration</div></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter -->
+    <div class="container">
+        <div class="stats-row">
+            <div class="counter-item"><div class="counter-number" data-target="1500">0</div><p>Happy patients</p></div>
+            <div class="counter-item"><div class="counter-number" data-target="12">0</div><p>Experts >10 yrs exp</p></div>
+            <div class="counter-item"><div class="counter-number" data-target="98">0</div><p>Patient retention rate</p></div>
+        </div>
+    </div>
+
+    <!-- CTA Technology -->
+    <div class="container cta-block">
+        <h3 style="color:white;">3D CBCT scanner & Class A sterilisation</h3>
+        <p style="margin-bottom: 20px;">Free 3D scan + personalised treatment plan on first visit</p>
+        <button class="btn-primary" id="ctaBtn">Request callback</button>
+    </div>
+
+    <!-- Map and Contact -->
+    <div class="container" style="margin-bottom: 60px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+            <div>
+                <h3>Contact us</h3>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> 221B Baker Street, London, W1U 6TG, UK</p>
+                <p><i class="fas fa-clock"></i> Mon–Fri 9am – 8pm, Sat 10am – 5pm</p>
+                <p><i class="fab fa-whatsapp"></i> +44 20 7946 0138 (WhatsApp)</p>
+                <button class="btn-outline" style="margin-top: 20px;">Get directions</button>
+            </div>
+            <div style="flex:1; min-width: 260px; background:#eef2f6; border-radius: 32px; height: 220px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-map" style="font-size: 48px; color: #6C7A91;"></i> <span>Interactive map</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container footer-grid">
+        <div>© 2025 DentaSmile Pro. GDC registration: 123456</div>
+        <div><i class="fab fa-instagram"></i> <i class="fab fa-telegram"></i> <i class="fab fa-x-twitter"></i></div>
+        <div>Privacy Policy</div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:white; border-radius: 40px; padding: 32px; max-width: 400px; text-align: center;">
+        <h3>Book an appointment</h3>
+        <input type="text" placeholder="Your name" style="width:100%; padding:12px; margin: 12px 0; border-radius: 60px; border:1px solid #ccc;">
+        <input type="tel" placeholder="Phone number" style="width:100%; padding:12px; margin-bottom:20px; border-radius: 60px; border:1px solid #ccc;">
+        <button class="btn-primary" id="closeModalBtn">Send request</button>
+        <p style="margin-top: 12px; font-size: 12px;">We'll call you back within 5 minutes</p>
+    </div>
+</div>
+
+<!-- External JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
